@@ -1,0 +1,192 @@
+
+ body{
+    margin: 0;
+    font-family: 'Poltawski Nowy', serif;
+    font-family: 'Raleway', sans-serif; }
+
+    .mw{
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .df{
+        display: flex;
+    }
+    
+    .logo{
+        height: 60px;
+    }
+
+    .header{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .midhead ul li {
+        list-style-type: none;
+        font-size: 18px;
+        padding: 0px 10px;
+        
+    }
+    .midhead ul{
+        display: flex;
+        align-items: baseline;
+    }
+    .midhead ul li a{
+        text-decoration: none;
+        color: black;
+        position: relative;
+        
+    }
+    .midhead ul li a::after{
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        background-color: blue;
+        transition: 0.1s linear all;
+        transform: scalex(0 );
+    }
+    .midhead ul li a:hover::after{
+        transform: scalex(1);
+         
+    }
+
+    .lefthead{
+        display: flex;
+        align-items: center;
+    }
+    
+    .rgbtn{
+        font-size: 18px;
+        font-weight: 600;
+        padding: 8px 13px;
+        color: black;
+        background: yellow;
+        border-radius: 52px;
+        border: 1px solid rgb(49, 55, 22);
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 5px black;
+        transition: 0.2s;
+    }
+    .rgbtn:hover{
+            box-shadow: 0 0 5px black,0 0 18px black;
+    }
+    .scrlbtn{
+        height: 30px;
+        width: 60px;
+        margin-left: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        border: none;
+        background-color: black;
+        border: 2px solid black;
+    }
+    
+    .span1{
+        display: block;
+        background-color: yellow;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        z-index: 1;
+        margin-left:-2px;
+        transition:  0.2s;
+    }
+   
+
+    .active .span1{
+        margin-left: 26px;
+    }
+
+    .lamp{
+        position: absolute;
+        top: 0px;
+        left: 383px;
+        height: 250px;
+    }
+
+    .light{
+        position: absolute;
+        top: 247px;
+        left: 190px;
+        height: 300px;
+        display: none;
+        
+    }
+
+    .light.on{
+        display: block;
+    }
+
+    .cnt1{
+        background: #e4d9d9;
+        height: 100vh;
+        transition: 0.5s linear all;
+    }
+
+.btman{
+    height: 401px;
+    position :relative;
+    top: 329px;
+    left: 262px;
+    display: none;
+    opacity: 0;
+    transition: 0.5s all linear;
+    
+}
+.btman.slowbt{
+    opacity: 1;
+}
+.btman.on{
+    display: block;
+}
+.spman{
+    height: 486px;
+    position :relative;
+    top: 240px;
+    left: 244px;
+    display: block;
+    opacity: 1;
+    transition: 0.5s all linear;
+}
+.spman.active{
+    display: none;
+}
+.text { 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align the content to the right */
+    flex-grow: 1; /* Allow the container to take up the remaining space */
+    padding-right: 20px; /* Add some right padding to the text container */
+}
+
+.btndef{
+    font-size: 45px;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#e4d9d9;}
+
+.cnt1.darkmode{
+    background-color: #0c0404bc;
+    color: whitesmoke;
+}
+
+.sun{
+    height: 250px;
+    position: relative;
+    top:0;
+    right:0 ;
+}
+
+
+

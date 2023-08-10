@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;500;600&family=Raleway:wght@200;300;500;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>  
+    <div > 
+<div class="fixed-header"> 
+    <div class="header mw df"> 
+        <div class="rghthead"> 
+        <img class="logo" src="./pngwing.com.png" alt="logo">
+        </div>
+        <div class="midhead">
+            <ul> 
+                <li><a href="#"> Batcave </a> </li>
+                <li><a href="#"> Stark Tower </a> </li>
+                <li><a href="#"> Co-ordinates </a> </li>
+                <li><a href="#"> More </a> </li>
+            </ul>
+        </div>
+        <div class="lefthead"> 
+            <button class="btn rgbtn">Register </button>
+            <button id="sps" class="btn scrlbtn" onclick="darkMode()"> <span id="sps" class="span1 sps"> </span> </button>
+        </div>
+        </div>
+    </div>
+    <div id="dmmd" class="cnt1 df"> 
+        <div class="trch">
+        <img class="lamp" src="./lamp.png" alt="logo">
+        <img class="light" id="lght" src="./light.png" alt="logo">
+         </div>
+         <div> 
+            <img id= "btm" class="btman" src="./pngegg.png">
+
+         </div>
+         <div class="text">
+
+            <h2>
+                Turn on  <span class="btndef">  button on the top right </span> for DarkMode
+            </h2>
+        </div>
+
+    </div>
+    </div>
+    <script>  
+     var btn = document.getElementById("sps");
+     var pic = document.getElementById("lght");
+     var btm = document.getElementById("btm");
+     var elm = document.getElementById("dmmd");
+     var spmn = document.getElementById("spm");
+    function darkMode(){
+        btn.classList.toggle("active");
+        pic.classList.toggle("on");
+        btm.classList.toggle("on");
+        elm.classList.toggle("darkmode")
+        setTimeout(() => {
+            btm.classList.toggle("slowbt")
+
+        }, 500);
+    }
+    </script>
+</body>
+</html>
